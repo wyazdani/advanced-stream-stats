@@ -11,6 +11,7 @@
     <li> Run npm install</li>
     <li> npm run dev</li>
     <li> npm run migrate</li>
+    <li> run php artisan db:seed</li>
     <li> Replace DB_DATABASE, DB_USERNAME, DB_PASSWORD in .env</li>
-    <li> Replace Keys in .env file with braintree credentials(in progress)</li>
+    <li> Configure BRAIN_TREE... variables from your braintree account </li>
 </ul>
