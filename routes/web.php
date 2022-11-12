@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\CheckoutController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,5 +20,8 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+Route::group(['middleware' => ['auth','web']],function() {
+    Route::post('store',[CheckoutController::class,'store'])->name('checkout.store');
+});
 
 require __DIR__.'/auth.php';

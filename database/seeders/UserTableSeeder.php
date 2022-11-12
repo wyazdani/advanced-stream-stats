@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Services\Braintree;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
@@ -24,5 +25,8 @@ class UserTableSeeder extends Seeder
                 'password'  =>  Hash::make('123456')
             ]);
         }
+        // Create Plans
+        $braintree = new Braintree();
+        $braintree->createPlans();
     }
 }
