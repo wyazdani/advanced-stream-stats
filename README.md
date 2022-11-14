@@ -10,7 +10,7 @@
     <li> Run Composer Install</li>
     <li> Run npm install</li>
     <li> npm run dev</li>
-    <li> npm run migrate</li>
+    <li> php artisan migrate</li>
     <li>Please link your PayPal sandbox to your braintree account https://developer.paypal.com/braintree/docs/guides/paypal/testing-go-live#linked-paypal</li>
     <li> run php artisan db:seed (will create test user and plans)</li>
     <li>You can also register for your own user</li>
